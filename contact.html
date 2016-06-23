@@ -1,0 +1,75 @@
+<div header active-tab="contact">
+</div>
+
+<div class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<h1 class="category-title"> Contact </h1>
+			</div>
+		</div>
+		<div class="row" style="margin-top:20px;">
+			<div class="offset-by-three nine columns">
+				<a href="https://www.facebook.com/alican.salor" target="_blank"><i class="social-icons fa fa-facebook fa-2x"></i></a>
+				<a href= "https://www.linkedin.com/pub/alican-salor/77/aba/b39" target="_blank"> <i class="social-icons fa fa-linkedin fa-2x"></i></a>
+				<a href= "https://github.com/alicansa" target="_blank"> <i class="social-icons fa fa-github fa-2x"></i></a>
+				<a href= "https://instagram.com/alicansa/" target="_blank"> <i class="social-icons fa fa-instagram fa-2x"></i></a>
+			</div>
+			
+		</div>
+		<!-- <div class="row" style="margin-top:20px;">
+			<div class="offset-by-four six columns">
+				<button style="border:none;">Email me <i class="social-icons fa fa-envelope-o"></i> </button>
+			</div>
+
+
+		</div> -->
+		<div style="margin-top:30px;">
+			<form name="contactForm">
+			  <div class="row">
+			    <div class="six columns">
+			      <label for="emailInput">Your email <i class="fa fa-asterisk"></i> </label>
+			      <input class="u-full-width" type="email" id="emailInput" ng-model="contact.email" required>
+			    </div>
+			    <div class="six columns">
+			      <label for="recipientInput">Reason for contacting</label>
+			      <select class="u-full-width" id="recipientInput" ng-model="contact.reasonForContact">
+			        <option value="Questions">Questions</option>
+			        <option value="Booking">Booking</option>
+			      </select>
+			    </div>
+			  </div>
+			  <label for="message">Message <i class="fa fa-asterisk"></i> </label>
+			  <textarea class="u-full-width" id="message" ng-model="contact.message" required></textarea>
+			  <div class="g-recaptcha" data-sitekey="6LdLdAwTAAAAAHqaVQ74ciUTsyqnqeLqw5Jd2m-h"></div>
+			</form>
+
+
+			<div class="row">
+				<div class="offset-by-four six columns">
+					<button ng-click="submitContactForm()" ng-disabled="contactForm.$invalid">
+						<h4>Submit Form<h4>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top:20px;">
+			<div class="offset-by-four eight columns">
+
+				<h5 ng-show="success == 2">
+					Sending <i class="fa fa-cog fa-spin fa-2x"></i>
+				</h5>
+
+				<h5 ng-show="success == 1">
+					Succesfully submitted
+				</h5>
+
+				<h5 ng-show="success == -1">
+					Couldn't submit form. Try again.
+				</h5>
+			</div>
+		</div>
+
+	</div>
+</div>

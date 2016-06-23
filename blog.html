@@ -1,0 +1,110 @@
+<div header active-tab="blog">
+</div>
+
+<div class="main">
+	<div class="container">
+
+		<section class="blog">
+
+			<div ng-show="summaryView" >
+				<div class="row">
+					<div class="twelve columns">
+						<h1 class="category-title "> 
+								Blog Posts 
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+
+					<div ng-show="loading">
+						<i class="fa fa-spinner fa-spin fa-5x"></i>
+					</div>
+
+					<div ng-show="!loading">
+						<div class="blog-not-mobile">
+							<div class="six columns">
+								<div  ng-repeat="item in blogJson.blogItems" ng-if="$even">
+									<a style="color:black;text-decoration:none;" ui-sref="blog({blogId : $index+1})">
+										<div class="blog-summary">
+											<h4>{{item.title}}</h4>
+											<h6>{{item.date}}</h6>
+											<div ng-bind-html="item.summary"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="six columns">
+								<div  ng-repeat="item in blogJson.blogItems" ng-if="$odd">
+									<a style="color:black;text-decoration:none;" ui-sref="blog({blogId : $index+1})">
+										<div class="blog-summary">
+											<h4>{{item.title}}</h4>
+											<h6>{{item.date}}</h6>
+											<div ng-bind-html="item.summary"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog-mobile">
+							<div class="twelve columns">
+								<div  ng-repeat="item in blogJson.blogItems">
+									<a style="color:black;text-decoration:none;" ui-sref="blog({blogId : $index+1})">
+										<div class="blog-summary">
+											<h4>{{item.title}}</h4>
+											<h6>{{item.date}}</h6>
+											<div ng-bind-html="item.summary"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+			<div ng-show="!summaryView">
+
+				<div class="twelve columns">
+					<div ng-show="loading">
+						<i class="fa fa-spinner fa-spin fa-5x"></i>
+					</div>
+
+					<div ng-show="!loading">
+						<div class="row">
+							<div class="nine columns">
+								<h1 class="category-title ">
+									<a style="text-decoration:none; color:black;" class="fa fa-caret-square-o-left"
+																ng-click="summaryView=true"
+																ui-sref="blog({blogId : ''})"> 
+									</a> 
+									{{blogJson.title}}
+								</h1>
+							</div>
+							<div class="three columns">
+								<h4 style="margin-top:50px;">Posted on {{blogJson.date}}</h4>
+							</div>
+						</div>
+
+						<div ng-bind-html="blogJson.content"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</div>
+		
+</div>
+
+<div footer>		
+</div>
+
+
+
+

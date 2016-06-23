@@ -1,0 +1,137 @@
+
+
+<div header active-tab="home" id="home">
+</div>
+
+
+<div class="main" >
+	<div class="container">
+	
+
+		<section id="welcome">
+			<div class="row">
+				<div class="twelve columns">
+					<h1 class="category-title "> Welcome to the CodeShack </h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="twelve columns">
+					<h3> This is where I share stuff about me, my interests and my professional life. </h3>
+					<h3> You might also stumble upon some good blog posts about DIY projects, random thoughts, music and skateboarding </h3>
+
+					<p class="quote"> "If you want to have good ideas you must have many ideas. Most of them will be wrong, and what you have to learn is which ones to throw away." <p>
+					<p> Linus Pauling </p>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+</div>
+
+<div id="aboutme" ng-model="nav" ng-init="nav=0" ng-controller="HomeController">
+	<div class="container">
+
+		<div class="row aboutme-not-mobile">
+			<div class="nine columns">
+
+					<h1 class="category-title"> {{aboutmeTitle}} </h1>
+
+					<p>{{aboutmeContent}}</p>
+			</div>
+
+			<div class="three columns">
+				<div class="wrapper" ng-class="{'active' : nav==0}">
+					<a ng-click="toBio();nav=0 ">
+						<h4 class="title">Biography</h4>
+						<span class="fa fa-eye fa-3x"></span>
+					</a>
+				</div>
+			
+
+				<div class="wrapper" ng-class="{'active' : nav==1}">
+					<a ng-click="toEng();nav=1" >
+						<h4 class="title">Engineering</h4>
+						<span class="fa fa-bolt fa-3x"></span>
+					</a>
+				</div>
+
+			
+				<div class="wrapper" ng-class="{'active' : nav==2}">
+					<a ng-click="toDsg();nav=2 ">
+						<h4 class="title">Design</h4>
+						<span class="fa fa-leaf fa-3x"></span>
+					</a>
+				</div>
+
+			
+
+				<div class="wrapper" ng-class="{'active' : nav==3}">
+					<a ng-click="toBus();nav=3 ">
+						<h4 class="title">Business</h4>
+						<span class="fa fa-line-chart fa-3x"></span>
+					</a>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+		<div class="row aboutme-mobile">
+
+			<div class="three columns">
+				<div class="wrapper" ng-class="{'active' : nav==0}">
+					<a ng-click="toBio();nav=0 ">
+						<h4 class="title">Biography</h4>
+						<span class="fa fa-eye fa-3x"></span>
+					</a>
+				</div>
+			
+
+				<div class="wrapper" ng-class="{'active' : nav==1}">
+					<a ng-click="toEng();nav=1" >
+						<h4 class="title">Engineering</h4>
+						<span class="fa fa-bolt fa-3x"></span>
+					</a>
+				</div>
+
+			
+				<div class="wrapper" ng-class="{'active' : nav==2}">
+					<a ng-click="toDsg();nav=2 ">
+						<h4 class="title">Design</h4>
+						<span class="fa fa-leaf fa-3x"></span>
+					</a>
+				</div>
+
+			
+
+				<div class="wrapper" ng-class="{'active' : nav==3}">
+					<a ng-click="toBus();nav=3 ">
+						<h4 class="title">Business</h4>
+						<span class="fa fa-line-chart fa-3x"></span>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="nine columns">
+
+					<h1 class="category-title"> {{aboutmeTitle}} </h1>
+
+					<p>{{aboutmeContent}}</p>
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>
+
+<div footer>		
+</div>
+		
+		
