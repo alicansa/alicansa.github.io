@@ -158,7 +158,9 @@ input:focus, textarea:focus, select:focus{
 		visibility: hidden !important;
 }
 
-
+ul {
+		list-style: none !important;
+}
 
 nav.minified{
 
@@ -176,6 +178,7 @@ nav.minified ul li{
 	float: left;
 	margin-left: 20px;
 	color: #42899f;
+
 
 }
 nav.minified ul li a{
