@@ -1,4 +1,4 @@
-.klan h1,h2,h3,h4,h5,h6,p,a{
+.klan h1,.klan h2,.klan h3,.klan h4,.klan h5,.klan h6,.klan p,.klan a{
   font-family: 'Eurostile' !important;
 }
 
