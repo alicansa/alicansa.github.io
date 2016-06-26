@@ -10,6 +10,7 @@ alicanSalorIndex.config(function($stateProvider) {
     .state('home',{
 	   	url: '/home',
       	templateUrl: 'home.html',
+        controller : 'HomeController',
       	anchor : true
     })
     .state('aboutme',{
