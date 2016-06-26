@@ -45,7 +45,7 @@ alicanSalorIndex.config(function($stateProvider) {
     module : 'public'
   })
 
-    .state('news',{
+    .state('klan_news',{
     url: '/klan/news',
     templateUrl: 'klan_news.html',
     controller : 'NewsController',
@@ -71,18 +71,18 @@ alicanSalorIndex.config(function($stateProvider) {
       templateUrl: 'klan_ponza.html',
       module : 'public'
     })
-    .state('roster',{
+    .state('klan_roster',{
       url: '/klan/roster',
       templateUrl: 'klan_roster.html',
       module : 'public'
     })
-    .state('booking',{
+    .state('klan_booking',{
       url: '/klan/booking',
       templateUrl: 'klan_booking.html',
       controller : 'BookingController',
       module : 'public'
     })
-    .state('contact',{
+    .state('klan_contact',{
       url: '/klan/contact',
       templateUrl: 'klan_contact.html',
       controller : 'ContactController',
