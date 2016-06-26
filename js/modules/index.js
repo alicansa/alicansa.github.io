@@ -46,51 +46,51 @@ alicanSalorIndex.config(function($stateProvider) {
 
      .state('klan_home',{
     url: '/klan/home',
-    templateUrl: 'klanweb/home.html',
+    templateUrl: 'klan_home.html',
     controller : 'HomeController',
     module : 'public'
   })
 
     .state('news',{
     url: '/klan/news',
-    templateUrl: 'klanweb/news.html',
+    templateUrl: 'klan_news.html',
     controller : 'NewsController',
     module : 'public'
     })
     .state('jonnyRock',{
       url: '/klan/jonnyrock',
-      templateUrl: 'klanweb/jonnyrock.html',
+      templateUrl: 'klan_jonnyrock.html',
       module : 'public'
     })
     .state('keremAkdag',{
       url: '/klan/keremakdag',
-      templateUrl: 'klanweb/keremakdag.html',
+      templateUrl: 'klan_keremakdag.html',
       module : 'public'
     })
     .state('kaanDuzarat',{
       url: '/klan/kaanduzarat',
-      templateUrl: 'klanweb/kaanduzarat.html',
+      templateUrl: 'klan_kaanduzarat.html',
       module : 'public'
     })
     .state('ponza',{
       url: '/klan/ponza',
-      templateUrl: 'klanweb/ponza.html',
+      templateUrl: 'klan_ponza.html',
       module : 'public'
     })
     .state('roster',{
       url: '/klan/roster',
-      templateUrl: 'klanweb/roster.html',
+      templateUrl: 'klan_roster.html',
       module : 'public'
     })
     .state('booking',{
       url: '/klan/booking',
-      templateUrl: 'klanweb/booking.html',
+      templateUrl: 'klan_booking.html',
       controller : 'BookingController',
       module : 'public'
     })
     .state('contact',{
       url: '/klan/contact',
-      templateUrl: 'klanweb/contact.html',
+      templateUrl: 'klan_contact.html',
       controller : 'ContactController',
       module : 'public'
     });
