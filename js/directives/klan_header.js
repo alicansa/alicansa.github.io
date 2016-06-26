@@ -1,7 +1,7 @@
 var klanWebHeader = angular.module('klanWebHeader', []);
 
 
-klanWebHeader.directive("header", function ($window) {
+klanWebHeader.directive("klanheader", function ($window) {
     return {
         scope: {
             activeTab: '@activeTab'
