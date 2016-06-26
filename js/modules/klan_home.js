@@ -1,6 +1,6 @@
 var klanWebHome = angular.module('klanWebHomeModule', []);
 
-klanWebHome.controller('HomeController', function($scope, $state) {
+klanWebHome.controller('KlanHomeController', function($scope, $state) {
 
 });
 

@@ -42,7 +42,7 @@ alicanSalorIndex.config(function($stateProvider) {
      .state('klan_home',{
     url: '/klan/home',
     templateUrl: 'klan_home.html',
-    controller : 'HomeController',
+    controller : 'KlanHomeController',
     module : 'public'
   })
 
