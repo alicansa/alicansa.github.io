@@ -3,6 +3,7 @@ var wanderWalletScreen = angular.module('wanderWalletScreen', []);
 
 wanderWalletScreen.directive("screen", function ($window) {
     return {
+        restrict : 'E',
         scope: {
             images: '@images'
         },
