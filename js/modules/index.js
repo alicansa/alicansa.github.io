@@ -1,6 +1,6 @@
 var alicanSalorIndex = angular.module('alicanSalorIndexModule', ['ui.router','alicanSalorHomeModule',
 																	'alicanSalorHeader','alicanSalorFooter',
-																	'alicanSalorBlog','alicanSalorContact']);
+																	'alicanSalorBlog','alicanSalorContact','wanderWalletScreen']);
 
 
 

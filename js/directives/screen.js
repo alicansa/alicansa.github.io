@@ -12,7 +12,7 @@ wanderWalletScreen.directive("screen", function ($window) {
             //images string to array
             var imageArr = scope.images.split(",");
             var containerOffsets = [];
-            console.log("here");
+       
             console.log(imageArr);
 
             //get element y locations
