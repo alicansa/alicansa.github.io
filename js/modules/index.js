@@ -1,6 +1,12 @@
 var alicanSalorIndex = angular.module('alicanSalorIndexModule', ['ui.router','alicanSalorHomeModule',
 																	'alicanSalorHeader','alicanSalorFooter',
-																	'alicanSalorBlog','alicanSalorContact','wanderWalletScreen']);
+																	'alicanSalorBlog','alicanSalorContact','wanderWalletScreen',
+
+                                  'klanWebHomeModule','klanWebIntroModule',
+                                                          'klanWebArtistsModule','klanWebHeader','klanWebArtist',
+                                                          'klanWebNews','klanWebContact','klanWebBooking'
+
+                                  ]);
 
 
 
@@ -35,7 +41,59 @@ alicanSalorIndex.config(function($stateProvider) {
      	url: '/cv',
       	templateUrl: 'cv.html',
       	controller : 'HomeController'
-     });
+     })
+
+
+     .state('klan_home',{
+    url: '/klan/home',
+    templateUrl: 'klanweb/home.html',
+    controller : 'HomeController',
+    module : 'public'
+  })
+
+    .state('news',{
+    url: '/klan/news',
+    templateUrl: 'klanweb/news.html',
+    controller : 'NewsController',
+    module : 'public'
+    })
+    .state('jonnyRock',{
+      url: '/klan/jonnyrock',
+      templateUrl: 'klanweb/jonnyrock.html',
+      module : 'public'
+    })
+    .state('keremAkdag',{
+      url: '/klan/keremakdag',
+      templateUrl: 'klanweb/keremakdag.html',
+      module : 'public'
+    })
+    .state('kaanDuzarat',{
+      url: '/klan/kaanduzarat',
+      templateUrl: 'klanweb/kaanduzarat.html',
+      module : 'public'
+    })
+    .state('ponza',{
+      url: '/klan/ponza',
+      templateUrl: 'klanweb/ponza.html',
+      module : 'public'
+    })
+    .state('roster',{
+      url: '/klan/roster',
+      templateUrl: 'klanweb/roster.html',
+      module : 'public'
+    })
+    .state('booking',{
+      url: '/klan/booking',
+      templateUrl: 'klanweb/booking.html',
+      controller : 'BookingController',
+      module : 'public'
+    })
+    .state('contact',{
+      url: '/klan/contact',
+      templateUrl: 'klanweb/contact.html',
+      controller : 'ContactController',
+      module : 'public'
+    });
 
 });
 
