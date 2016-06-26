@@ -471,6 +471,88 @@ nav.primary ul li a:hover{
 }
 
 
+.phone-eye{
+	display: none;
+}
+
+.phone-no-eye{
+	display: block;
+}
+
+.phone{
+
+	position: fixed;
+	top:20px;
+	left:40px !important;
+	margin-bottom: 10px;
+	margin-top: 10px;
+  	z-index: 3 !important;
+}
+
+.phone img{
+
+	position: absolute;
+	opacity: 1;
+	width: 100%;
+	border : none; 
+	max-height: 635px !important;
+	max-width:306px;
+	position: fixed;
+	top:20px;
+	left:40px !important;
+	z-index: 3 !important;
+
+}
+
+.splash {
+	background-color: grey;
+	background-attachment: fixed;
+	z-index: 2 !important;
+	min-height: 700px !important;
+}
+
+.feed{
+	background-color: #993333;
+	background-attachment: fixed;
+	z-index: 2;
+	min-height: 700px !important;
+	
+}
+
+.discovery {
+	background-color: #5f7982;
+	background-attachment: fixed;
+	z-index: 2;
+	min-height: 700px !important;
+}
+
+.calendar{
+	background-color: #cc9966;
+	background-attachment: fixed;
+	z-index: 2;
+	min-height: 700px !important;
+}
+
+
+.guide {
+	background-color: #999966;
+	background-attachment: fixed;
+	z-index: 2;
+	min-height: 700px !important;
+
+
+}
+
+.chat{
+	background-color: white;
+	background-attachment: fixed;
+	z-index: 2;
+	min-height: 700px !important;
+
+
+}
+
+
 @-webkit-keyframes cd-bounce {
   0% {
     -webkit-transform: scale(0.5);
@@ -704,6 +786,26 @@ nav.primary ul li a:hover{
 
 	#aboutme h4{
 		display: none;
+	}
+
+
+	.phone-no-eye{
+		display: none;
+	}
+	.phone-eye{
+		display: block;
+	}
+
+	.phone a{
+		position: absolute;
+		z-index: 4 !important;
+		color : black;
+	}
+
+	.phone a:hover{
+
+		color : #42899f;
+		
 	}
 
 

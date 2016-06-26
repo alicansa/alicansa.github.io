@@ -27,6 +27,10 @@ alicanSalorIndex.config(function($stateProvider) {
       	templateUrl: 'contact.html',
       	controller : 'ContactController'
     })
+    .state('wanderwallet',{
+      url: '/wanderwallet',
+        templateUrl: 'wanderwallet.html'
+    })
      .state('cv',{
      	url: '/cv',
       	templateUrl: 'cv.html',

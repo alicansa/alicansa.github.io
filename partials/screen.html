@@ -1,0 +1,22 @@
+
+<div class="phone-eye">
+	<div class="phone" ng-model="showPhone" ng-init="showPhone=false">
+
+		<div ng-show="showPhone">
+			<img src="css/img/iphone_mockup.png">
+			<img class="current_view" src="css/img/splash.png">
+		</div>
+
+		<a ng-click="showPhone = !showPhone"> 
+			<i class="fa fa-4x" ng-class="{'fa-eye' : !showPhone, 'fa-eye-slash' : showPhone}"></i>
+		</a>
+
+	</div>
+</div>
+
+<div class="phone-no-eye">
+	<div class="phone">
+		<img src="css/img/iphone_mockup.png">
+		<img class="current_view" src="css/img/splash.png">
+	</div>
+</div>
