@@ -1,11 +1,5 @@
 var alicanSalorIndex = angular.module('alicanSalorIndexModule', ['ui.router','alicanSalorHomeModule',
-																	'alicanSalorHeader','alicanSalorFooter',
-																	'alicanSalorBlog','alicanSalorContact','wanderWalletScreen',
-
-                                  'klanWebHomeModule','klanWebIntroModule',
-                                                          'klanWebArtistsModule','klanWebHeader','klanWebArtist',
-                                                          'klanWebNews','klanWebContact','klanWebBooking'
-
+																	'alicanSalorHeader','alicanSalorFooter','alicanSalorBlog','alicanSalorContact','wanderWalletScreen','klanWebHomeModule','klanWebIntroModule','klanWebArtistsModule','klanWebHeader','klanWebArtist','klanWebNews','klanWebContact','klanWebBooking'
                                   ]);
 
 
